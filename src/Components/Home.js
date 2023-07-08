@@ -13,7 +13,7 @@ function Home(props){
   <div class="carousel-item active">
     <img src={props.img1} alt="Los Angeles" class="d-block" style={{width:"100%",height:"500px"}}/>
     <div class="carousel-caption">
-    <h1  class="bg-dark">{props.caption}</h1>
+    <h1  class="bg-danger">{props.caption}</h1>
     </div>
   </div>
   <div class="carousel-item">
@@ -25,7 +25,7 @@ function Home(props){
   <div class="carousel-item">
     <img src={props.img3} alt="New York" class="d-block" style={{width:"100%",height:"500px"}}/>
     <div class="carousel-caption">
-    <h1  class="bg-dark">{props.caption}</h1>
+    <h1  class="bg-danger">{props.caption}</h1>
     </div>  
   </div>
 </div>
