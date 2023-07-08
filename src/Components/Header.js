@@ -16,7 +16,7 @@ function Header(props){
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Hom</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Movies</a>
@@ -45,7 +45,7 @@ function Header(props){
       </form> 
     </div>
   </div>
-  <div class="poptin-embedded" data-id="466e6a8ea454c"></div>
+  \
 </nav></div>
         </>
     )
