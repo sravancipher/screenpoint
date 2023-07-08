@@ -1,0 +1,91 @@
+
+<button type="button" class="btn btn-danger btn-sm mt-1" data-bs-toggle="modal" data-bs-target="#myModal">Sign In</button>
+        <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered" >
+          <div class="modal-content" style={{backgroundImage:'url("https://wallpapercave.com/wp/wp2649422.jpg")',backgroundSize:"100% 100%"}}>
+            <div class="modal-header">
+              <h4 class="modal-title text-danger">Create Accout</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+            <div class="form-floating mt-3 mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name"/>
+            <label for="name">Enter Your Name</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email"/>
+            <label for="email">Enter Your Email</label>
+        </div>
+        <div class="form-floating mt-3 mb-3">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd"/>
+        <label for="pwd">Password</label>
+</div>
+        <p class="float-end text-primary">login?</p>
+        <button class="btn btn-danger w-100" type="button">Sign In</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+
+  <?php
+$servername = "localhost";
+$username = "root";
+$password = "mysql";
+$dbname = "mysql1";
+if($_SERVER['REQUEST_METHOD']=="POST"){
+    $name=$_POST['name'];
+    $mail=$_POST['mail'];
+    $comment=$_POST['comment'];
+}
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql = "INSERT INTO info (name,email,cmnt)
+VALUES ($name,$mail,$comment)";
+
+if (mysqli_query($conn, $sql)) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+?>
+      
+
+      <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "contact";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+// sql to create table
+$sql = "CREATE TABLE user_data (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(30) NOT NULL,
+email VARCHAR(50),
+password varchar(20)
+)";
+
+if (mysqli_query($conn, $sql)) {
+  echo "Table user_data created successfully";
+} else {
+  echo "Error creating table: " . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+?>
