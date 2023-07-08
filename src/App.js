@@ -23,8 +23,8 @@ function App() {
     <div className="App">
     <Header />
     <div class="row mt-5">
-      <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000"><Home  id1="demo" id2="#demo" img1={img1} img2={img2} img3={img3}  caption="Trending"/></div>
-      <div class="col-lg-4 gx-0" data-aos="fade-left" data-aos-duration="1000"><Home id1="demo1" id2="#demo1" img1={img4} img2={img5} img3={img6}  caption="Suggested"/></div>
+      <div class="col-lg-8 bg-danger" data-aos="fade-right" data-aos-duration="1000"><Home  id1="demo" id2="#demo" img1={img1} img2={img2} img3={img3}  caption="Trending"/></div>
+      <div class="col-lg-4 gx-0 bg-danger" data-aos="fade-left" data-aos-duration="1000"><Home id1="demo1" id2="#demo1" img1={img4} img2={img5} img3={img6}  caption="Suggested"/></div>
     </div>
     <div class="row m-3">
       <h1 class="text-white text-center">Movies</h1>
