@@ -79,3 +79,4 @@
 
 id="demo1" img1={img4} img2={img5} img3={img6}  caption="Suggested"
 <div class="col-md-4 gx-0"><Home id="demo1" img1={img4} img2={img5} img3={img6}  caption="Suggested"/></div>
+ <script>(function(){var pp=document.createElement('script'), ppr=document.getElementsByTagName('script')[0]; stid='SzBncDY4VVJiSTZ4ZGRZL2FjOVBVZz09';pp.type='text/javascript'; pp.async=true; pp.src=('https:' == document.location.protocol ? 'https://' : 'http://') + 's01.live2support.com/dashboardv2/chatwindow/'; ppr.parentNode.insertBefore(pp, ppr);})();</script>
