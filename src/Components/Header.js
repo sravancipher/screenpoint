@@ -21,7 +21,7 @@ function Header(props) {
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Movies</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/telugu">Telugu</a></li>
+                    <li><a class="dropdown-item" href="">Telugu</a></li>
                     <li><a class="dropdown-item" href="">English</a></li>
                     <li><a class="dropdown-item" href="#movies">Other</a></li>
                   </ul>
