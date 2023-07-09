@@ -18,6 +18,7 @@ import img13 from './Components/13.jpeg';
 import img14 from './Components/14.jpeg';
 import AOS from 'aos';
 function App() {
+  
   AOS.init()
   return (
     <div className="App">
