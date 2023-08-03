@@ -4,7 +4,7 @@ function Contact(){
     AOS.init();
     return(
         <>
-        <form action="https://192.168.1.8/PHP/contact.php" method="post">
+        <form action="https://192.168.1.5/PHP/contact.php" method="post">
         <div class="form-floating mt-3 mb-3" id="contact" data-aos="flip-left" data-aos-duration="1000">
             <input type="text" class="form-control" id="name_" placeholder="Enter your name" name="name" required/>
             <label for="name">Enter Your Name</label>
