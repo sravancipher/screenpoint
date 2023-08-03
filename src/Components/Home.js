@@ -8,7 +8,6 @@ function Home(props){
   <button type="button" data-bs-target={props.id} data-bs-slide-to="1" class="active"></button>
   <button type="button" data-bs-target={props.id} data-bs-slide-to="2"></button>
 </div>
-
 <div class="carousel-inner">
   <div class="carousel-item active">
     <img src={props.img1} alt="Los Angeles" class="d-block" style={{width:"100%",height:"500px"}}/>
@@ -29,7 +28,6 @@ function Home(props){
     </div>  
   </div>
 </div>
-
 <button class="carousel-control-prev" type="button" data-bs-target={props.id2} data-bs-slide="prev">
   <span class="carousel-control-prev-icon"></span>
 </button>

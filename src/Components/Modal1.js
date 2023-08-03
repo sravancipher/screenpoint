@@ -11,7 +11,7 @@ function Modal1() {
       <button type="button" class="btn btn-danger btn-sm mt-1 mx-1" onClick={handleShow}>Sign Up</button>
       <Modal show={show} id="myModal" onHide={handleClose} class="modal ">
         <div>
-          <form action="https://192.168.210.213/PHP/signup.php" method="post">
+          <form action="https://192.168.1.8/PHP/signup.php" method="post">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content " >
                 <Modal.Header>
@@ -49,8 +49,6 @@ function Modal1() {
           </form>
         </div>
       </Modal>
-
-
     </>
   )
 }

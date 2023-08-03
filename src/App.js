@@ -1,7 +1,9 @@
+import React from 'react';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import List from './Components/List';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 import img1 from './Components/1.jpg';
 import img2 from './Components/2.jpg';
 import img3 from './Components/3.jpg';
@@ -26,41 +28,42 @@ function App() {
   return (
     <div className="App">
       <Header />
-    <div class="row mt-5">
-      <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000"><Home  id1="demo" id2="#demo" img1={img1} img2={img2} img3={img3}  caption="Trending"/></div>
-      <div class="col-lg-4 gx-0 " data-aos="fade-left" data-aos-duration="1000"><Home id1="demo1" id2="#demo1" img1={img4} img2={img5} img3={img6}  caption="Suggested"/></div>
-    </div>
-    <div class="row m-3">
-    
-      <h1 class="text-white text-center">Movies</h1>
-      <div class="col-lg-3 col-md-6 gx-0 gy-1"><List id="movies" img4={img7} /></div>
-      <div class="col-lg-3 col-md-6  gx-0 gy-1"><List id="movies"  img4={img8}/></div>
-      <div class="col-lg-3 col-md-6  gx-0 gy-1"><List id="movies"  img4={img9}/></div>
-      <div class="col-lg-3 col-md-6 gx-0 gy-1"><List id="movies"  img4={img10}/></div>
-      <a class="text-primary text-right" href="#">Explore more</a>
-     </div>
-    <div class="row m-3">
-      <h1 class="text-white text-center">Webseries</h1>
-      <div class="col-lg-3 col-md-6 gx-0 h-25"><List id="webseries" img4={img11}/></div>
-      <div class="col-lg-3 col-md-6 gx-0"><List id="webseries" img4={img12}/></div>
-      <div class="col-lg-3 col-md-6 gx-0"><List id="webseries" img4={img13}/></div>
-      <div class="col-lg-3 col-md-6 gx-0"><List id="webseries" img4={img14}/></div>
-      <p class="text-primary text-right" href="#">Explore more</p>
-    </div>
-    <div class="row m-3">
-      <h1 class="text-white text-center">Cartoons</h1>
-      <div class="col-lg-3 col-md-6 gx-0 h-25"><List id="cartoons" img4={img16}/></div>
-      <div class="col-lg-3 col-md-6 gx-0"><List id="cartoons" img4={img17}/></div>
-      <div class="col-lg-3 col-md-6 gx-0"><List id="cartoons" img4={img18}/></div>
-      <div class="col-lg-3 col-md-6 gx-0"><List id="cartoons" img4={img19}/></div>
-      <a class="text-primary text-right" >Explore more</a>
-    </div>
-    <div class="row m-5">
-    <h1 class="text-white text-center"> Contact Us </h1>
-      <div class="col-md-3"></div>
-      <div class="col-md-6"><Contact/></div>
-      <div class="col-md-3"></div>
-  </div>
+      <div class="row mt-5">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000"><Home id1="demo" id2="#demo" img1={img1} img2={img2} img3={img3} caption="Trending" /></div>
+        <div class="col-lg-4 gx-0 " data-aos="fade-left" data-aos-duration="1000"><Home id1="demo1" id2="#demo1" img1={img4} img2={img5} img3={img6} caption="Suggested" /></div>
+      </div>
+      <div class="row m-3">
+
+        <h1 class="text-white text-center">Movies</h1>
+        <div class="col-lg-3 col-md-6 gx-0 gy-1"><List id="movies" img4={img7} /></div>
+        <div class="col-lg-3 col-md-6  gx-0 gy-1"><List id="movies" img4={img8} /></div>
+        <div class="col-lg-3 col-md-6  gx-0 gy-1"><List id="movies" img4={img9} /></div>
+        <div class="col-lg-3 col-md-6 gx-0 gy-1"><List id="movies" img4={img10} /></div>
+        <p class="text-primary text-right">Explore more</p>
+      </div>
+      <div class="row m-3">
+        <h1 class="text-white text-center">Webseries</h1>
+        <div class="col-lg-3 col-md-6 gx-0 h-25"><List id="webseries" img4={img11} /></div>
+        <div class="col-lg-3 col-md-6 gx-0"><List id="webseries" img4={img12} /></div>
+        <div class="col-lg-3 col-md-6 gx-0"><List id="webseries" img4={img13} /></div>
+        <div class="col-lg-3 col-md-6 gx-0"><List id="webseries" img4={img14} /></div>
+        <p class="text-primary text-right" >Explore more</p>
+      </div>
+      <div class="row m-3">
+        <h1 class="text-white text-center">Cartoons</h1>
+        <div class="col-lg-3 col-md-6 gx-0 h-25"><List id="cartoons" img4={img16} /></div>
+        <div class="col-lg-3 col-md-6 gx-0"><List id="cartoons" img4={img17} /></div>
+        <div class="col-lg-3 col-md-6 gx-0"><List id="cartoons" img4={img18} /></div>
+        <div class="col-lg-3 col-md-6 gx-0"><List id="cartoons" img4={img19} /></div>
+        <p class="text-primary text-right" >Explore more</p>
+      </div>
+      <div class="row m-5">
+        <h1 class="text-white text-center"> Contact Us </h1>
+        <div class="col-md-3"></div>
+        <div class="col-md-6"><Contact /></div>
+        <div class="col-md-3"></div>
+      </div>
+      <Footer />
     </div>
   );
 }
