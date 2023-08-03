@@ -14,12 +14,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>screenpoint</title>
+    <style>
+      #search{dispay:none}
+    </style>
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" class="bg-dark">
-      <div class="container-fluid"><div id="root">
-        <ul id="myList"></ul> 
-      </div></div>
+      <div id="root"></div>
   <script text="type/script">
+    document.getElementById("searchInput").addEventListener("click",function(){
+      document.getElementById("search").style.display="block"
+    })
     let doctitle=document.title;
     window.addEventListener("blur",()=>{
       document.title="come back ☹"
@@ -27,34 +31,9 @@
     window.addEventListener("focus",()=>{
       document.title=doctitle;
     })
-    var list = ["Banana", "Apple", "Orange", "Blueberry"];
-var myList = document.getElementById('myList');
-
-function filterList(searchTerm) {
-  myList.innerHTML = '';
-
-  var filteredList = list.filter(function(item) {
-    return item.toLowerCase().includes(searchTerm.toLowerCase());
-  });
-
- 
-  filteredList.forEach(function(item) {
-    var li = document.createElement('li');
-    li.textContent = item;
-    myList.appendChild(li);
-  });
-}
-
-var searchInput = document.getElementById('searchInput');
-searchInput.addEventListener('keyup', function(event) {  
-    var searchTerm = event.target.value;
-    filterList(searchTerm);  
-});
-list.forEach(function(item) {
-  var li = document.createElement('li');
-  li.textContent = item;
-  myList.appendChild(li);
-});
+    document.getElementsByClassName("watchlater").addEventListener("click",function(){
+      alert("added to watchlater")
+    })
   </script>
   <script src="//code.tidio.co/tkx5mc2zgy5zo2t2ha7shr8mnktxwjic.js" async></script>
   </body>
